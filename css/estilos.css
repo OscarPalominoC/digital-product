@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap');
+/* Variable */
+:root{
+    --green-color:rgb(36, 204, 36);
+    --white-color:white;
+    --black-color:#383131;
+    --footer-color:#313337;
+    /* Espaciado */
+    --Space10:10px;
+    /* Box shadow */
+    --box: 0 0 4px #b3b2b2;
+    /* Tamaño imagenes */
+    --width: 100px;
+    --height: 100px;
+}
+/* Fin Variables */
+html, body{
+    padding: 0px;
+    margin: 0px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:var(--black-color);
+}
+nav{
+    background-color: var(--green-color);
+    padding: var(--Space10);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+}
+nav li{
+    padding-left: 20px;
+    list-style: none;
+    
+}
+
+nav li a{
+    color: var(--black-color);
+    text-decoration: none;
+}
+nav li a:hover{
+    color:var(--white-color);
+}
+
+label input{
+    font-size: 12px;
+}
+
+.main_section{
+    padding: 20px;
+    text-align: center;
+}
+.products{
+    background-image: url("../img/curve.png");
+    max-height: 50px;
+    background-size: cover;
+    background-position: center top;
+    padding: 12%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+.product{
+    padding: var(--Space10);
+    margin-top: -19%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 12px;
+    width: 300px;
+}
+.product .content{
+    background-color: var(--white-color);
+    padding: 2%;
+    box-shadow: var(--box);
+
+}
+.img_content{
+    text-align: center;
+}
+.main_button{
+    background-color: var(--green-color);
+    width: 100%;
+    padding: 5px;
+    color: var(--white-color);
+    font-size: 17px;
+    border: 0;
+    border-radius: 20px;
+}
+.main_button:hover{
+    background-color: #0bb80b;
+    cursor: pointer;
+}
+.Features{
+    padding: var(--Space10);
+    display: flex;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+}
+.Box{
+    color:var(--black-color);
+    width: 60%;
+    margin: auto;
+}
+.Features .Box{
+    background-color: white;
+    padding: 20px;
+}
+.img-features{
+    text-align: center;
+}
+#img-features{
+    width: var(--width);
+    height: var(--height);
+}
+.comments{
+    padding: var(--Space10);
+    display: flex;
+    text-align: justify;
+    justify-content: center;
+    margin: var(--Space10);
+}
+.people{
+    color:var(--black-color);
+    padding: 20px;
+    width: 239px;
+    margin: auto;
+}
+.people .people-content{
+    background-color: white;
+    padding: 0px;
+    
+    box-shadow: var(--box);
+}
+.people-content{
+    margin-bottom: 10px;
+}
+.footer{
+    background-color: var(--footer-color);
+    scroll-margin-block: 0px;
+}
+.footer-options{
+    color:white;
+}
+footer a{
+    color:var(--green-color);
+}
+
+
+/* venta */
+.modulo_pago{
+    background-color: var(--white-color);
+    box-shadow: var(--box);
+    padding: var(--Space10);
+    margin-bottom: 100px;
+}
+.img_pago{
+    max-width: 150px;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+}
+.data{
+    margin-top: 10px;
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid var(--black-color);
+    margin-bottom: 10px;
+}
+
+.modulo_pago .main_button{
+    margin-top: 10px;
+}
+/* PREGUNTAS FRECUENTES */
+.faqs{
+    text-align: justify;
+    margin: auto;
+    display: inherit;
+    justify-content: center;
+    padding-left: 100px;
+    padding-right: 50px;
+}
+
+.faqs .container .row{
+    justify-items: center;
+}
+
+/* TERMINOS Y CONDICIONES */
+.condiciones{
+    text-align: justify;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.condiciones .container .row{
+    justify-items: center;
+    display: flex;
+}
